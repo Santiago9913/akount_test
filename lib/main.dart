@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SafeArea(child: const Dashboard(key: Key('Akount_Dashboard'))),
+      home: const SafeArea(child: Dashboard(key: Key('Akount_Dashboard'))),
     );
   }
 }
