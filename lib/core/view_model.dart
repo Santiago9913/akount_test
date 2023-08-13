@@ -12,8 +12,10 @@ class AkountViewModel extends StateNotifier<AkountState> {
     DateTime currentDate = DateTime.now();
 
     GraphData data = await getSpots(
-      formatter.format(currentDate),
-      formatter.format(currentDate),
+      formatter.format(
+          DateTime(currentDate.year, currentDate.month, currentDate.day - 1)),
+      formatter.format(
+          DateTime(currentDate.year, currentDate.month, currentDate.day - 1)),
     );
     return data;
   }
